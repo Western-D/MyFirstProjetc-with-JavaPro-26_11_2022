@@ -1,4 +1,4 @@
-package Homework_2;
+package Animals;
 
 public class Cat extends Animal{
     public Cat(String name, byte paws, short age, boolean sex) {

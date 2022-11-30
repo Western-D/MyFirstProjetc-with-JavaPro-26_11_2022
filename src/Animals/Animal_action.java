@@ -1,4 +1,4 @@
-package Homework_2;
+package Animals;
 
 public interface Animal_action {
     void doSleep();

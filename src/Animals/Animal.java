@@ -1,4 +1,4 @@
-package Homework_2;
+package Animals;
 
 public abstract class Animal implements Animal_action{
     private String name;
@@ -17,37 +17,31 @@ public abstract class Animal implements Animal_action{
     {
         if (isSleep)
             System.out.println(this.name + " is sleeping!");
-        else System.out.println(name + " isn`t sleeping!");
+        else System.out.println(this.name + " isn`t sleeping!");
     }
     @Override
     public void doSleep() {
-        isSleep = true;
+        this.isSleep = true;
         IsSleep();
     }
     @Override
     public void doDrink() {
         System.out.println(this.name + " is drinking!");
     }
-
     @Override
     public void doEat() {
         System.out.println(this.name + " is eating!");
     }
-
     public String getName() {
         return name;
     }
-
     public byte getPaws() {
         return paws;
     }
-
     public short getAge() {
         return age;
     }
-
     public boolean isSex() {
-
         return sex;
     }
     public String getSex()
