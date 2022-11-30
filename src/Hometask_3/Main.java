@@ -11,8 +11,8 @@ public class Main {
         cat.doRun(300);
         cat.doSwim(22);
 
-        System.out.println(Cat.catCount);
-        System.out.println(Dog.dogCount);
-        System.out.println(Cat.animalCount);
+        System.out.println(Cat.getCatCount());
+        System.out.println(Dog.getDogCount());
+        System.out.println(Animals.getAnimalCount());
     }
 }

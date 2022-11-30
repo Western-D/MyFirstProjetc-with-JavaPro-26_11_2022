@@ -6,7 +6,12 @@ public class Cat extends Animals {
     }
 
     private String name;
-    static int catCount = 0;
+
+    public static int getCatCount() {
+        return catCount;
+    }
+
+    private static int catCount = 0;
 
     Cat() {
         ++catCount;

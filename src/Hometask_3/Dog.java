@@ -6,7 +6,12 @@ public class Dog extends Animals{
     }
 
     private String name;
-    static int dogCount = 0;
+
+    public static int getDogCount() {
+        return dogCount;
+    }
+
+    private static int dogCount = 0;
     Dog(){
         ++dogCount;
         this.name = "Bobik_" + dogCount;
