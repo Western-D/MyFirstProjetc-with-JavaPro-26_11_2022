@@ -30,12 +30,9 @@ public class Main {
                 participants) {
             for (Obstacle obstacle :
                     obstacles) {
-                if (obstacle instanceof Treadmill){
-                    participant.run(obstacle.distanceOfTrack);
 
-                } else if (obstacle instanceof Wall) {
-                    participant.jump(obstacle.heightOfWall);
-                }
+                obstacle.overcome(participant);
+
                 if (participant.getCountObstacle() == 0)
                     break;
                 if (participant.getCountObstacle() == obstacles.size())
