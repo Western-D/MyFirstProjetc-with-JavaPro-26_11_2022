@@ -34,9 +34,6 @@ public abstract class Participant {
             countObstacle = 0;
         }
     }
-
-
-
     public void jump(int hight){
         if(maxJump >= hight) {
             System.out.println(String.format("Учасник %s пройшов перешкоду %s на дистанції %d метрів.",
