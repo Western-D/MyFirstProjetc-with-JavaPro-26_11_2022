@@ -1,4 +1,4 @@
-package Hometask_3;
+package Hometask3;
 
 public abstract class Animals {
     public abstract void doRun(int distance);

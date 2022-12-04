@@ -1,4 +1,4 @@
-package Hometask_2.p_2_and_3;
+package Hometask2.p_2_and_3;
 
 public class Employees {
 

@@ -1,4 +1,4 @@
-package Hometask_2.p_5;
+package Hometask2.p_5;
 
 public class Car {
     public void start(){

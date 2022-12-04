@@ -1,4 +1,4 @@
-package Hometask_3;
+package Hometask3;
 
 public class Cat extends Animals {
     public String getName() {
