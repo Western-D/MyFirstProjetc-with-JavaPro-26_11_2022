@@ -4,7 +4,6 @@ public abstract class Participant {
     private String name;
     private int maxJump; // in centimeters
     private int maxRunDistance; // in meters
-
     private int countObstacle;
     private int thisDistance;
 
@@ -13,6 +12,13 @@ public abstract class Participant {
         this.name = name;
         this.maxJump = maxJump;
         this.maxRunDistance = maxRunDistance;
+    }
+    public int getCountObstacle() {
+        return countObstacle;
+    }
+
+    public String getName() {
+        return name;
     }
     public void run(int distance) {
         if (maxRunDistance >= distance){
@@ -29,13 +35,7 @@ public abstract class Participant {
         }
     }
 
-    public int getCountObstacle() {
-        return countObstacle;
-    }
 
-    public String getName() {
-        return name;
-    }
 
     public void jump(int hight){
         if(maxJump >= hight) {
@@ -51,5 +51,4 @@ public abstract class Participant {
 
 
     }
-
 }
