@@ -15,14 +15,16 @@ public abstract class Participant {
         this.maxRunDistance = maxRunDistance;
     }
     public void run(int distance) {
-        if (maxRunDistance > distance){
-            System.out.println(this.name + " пробіг бігову доріжку");
+        if (maxRunDistance >= distance){
             thisDistance += distance;
+            System.out.println(String.format("Учасник %s пройшов перешкоду %s на дистанції %d метрів.",
+                    name, "\"Бігова дорожка\"" , thisDistance));
+
             ++countObstacle;
         }
         else{
             System.out.println(String.format("Учасник %s не пройшов перешкоду %s на дистанції %d метрів. Пройдено: %d перешкод.\n",
-                    name, "\"Бігова дорожка\"" , distance, countObstacle));
+                    name, "\"Бігова дорожка\"" , thisDistance, countObstacle));
             countObstacle = 0;
         }
     }
@@ -36,8 +38,9 @@ public abstract class Participant {
     }
 
     public void jump(int hight){
-        if(maxJump > hight) {
-            System.out.println(this.name + " перестрибнув стіну");
+        if(maxJump >= hight) {
+            System.out.println(String.format("Учасник %s пройшов перешкоду %s на дистанції %d метрів.",
+                    name, "\"Стіна\"" , thisDistance));
             ++countObstacle;
         }
         else {
