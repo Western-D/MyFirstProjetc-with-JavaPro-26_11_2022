@@ -11,6 +11,7 @@ public class Main {
         Participant participant2 = new Human();
         Participant participant3 = new Robot();
 
+
         participantList.add(participant1);
         participantList.add(participant2);
         participantList.add(participant3);
