@@ -5,18 +5,17 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int lenght = 100_000_000;
-        int[] arr = Sorting.init(lenght);
-        int[] arr1 = Arrays.copyOf(arr, lenght);
-        int[] arr2 = Arrays.copyOf(arr, lenght);
-        int[] arr3 = Arrays.copyOf(arr, lenght);
+
+        int[] arr1 = Sorting.init(180_000);
+        int[] arr2 = Sorting.init(120_000);
+        int[] arr3 = Sorting.init(100_000_000);
 
         long start1 = System.currentTimeMillis();
-        Sorting.quickSort1(arr1);
+        Sorting.bubbleSort(arr1);
         long finish1 = System.currentTimeMillis();
         System.out.println(finish1 - start1);
         long start2 = System.currentTimeMillis();
-        Sorting.quickSort1(arr2);
+        Sorting.shakeSort(arr2);
         long finish2 = System.currentTimeMillis();
         System.out.println(finish2 - start2);
         long start3 = System.currentTimeMillis();
