@@ -1,4 +1,4 @@
-package hometask8;
+package Logger;
 
 public class ConsoleLoggerConfiguration extends LoggerConfiguration{
     public ConsoleLoggerConfiguration(LoggingLevel fileLoggingLevel) {

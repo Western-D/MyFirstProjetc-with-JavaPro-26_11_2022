@@ -1,4 +1,4 @@
-package hometask8;
+package Logger;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

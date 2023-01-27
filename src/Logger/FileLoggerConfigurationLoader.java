@@ -1,4 +1,4 @@
-package hometask8;
+package Logger;
 
 import java.io.File;
 import java.io.FileNotFoundException;

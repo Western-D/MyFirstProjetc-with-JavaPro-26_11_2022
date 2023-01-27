@@ -1,4 +1,4 @@
-package hometask8;
+package Logger;
 
 public class FileLogger extends Logger {
     public FileLogger(LoggerConfigurationLoader fileLoggerConfigurationLoader) {

@@ -1,4 +1,6 @@
-package hometask12;
+package Threads;
+
+import hometask12.MyRunnableObject;
 
 import java.util.ArrayList;
 import java.util.List;

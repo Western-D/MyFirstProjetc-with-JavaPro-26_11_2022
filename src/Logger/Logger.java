@@ -1,4 +1,4 @@
-package hometask8;
+package Logger;
 
 public abstract class Logger
 {
