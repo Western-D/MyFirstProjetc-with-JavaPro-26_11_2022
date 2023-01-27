@@ -26,7 +26,7 @@ public class CoffeeOrderBoard extends MyRunnableObject {
         }
         while (isOpen){
             synchronized (this) {
-                addOrder(new Order(++numberOrder, "coffee"));
+                addOrder(new Order(++numberOrder, "TestPersonName"+numberOrder));
             }
             ThreadSafeList.sleep(new Random().nextInt(1,2));
         }
@@ -85,11 +85,11 @@ public class CoffeeOrderBoard extends MyRunnableObject {
     }
     private void orderGivenBoard(){
         System.out.println("Готовые заказы: ");
-        System.out.println("Номер | Заказ");
+        System.out.println("Номер | Заказчик");
         synchronized (this){
             for (Order order :
                     deliveryOrders) {
-                System.out.println(order.getNumberOfOrder()+" | " + order.getNameOfOrder());
+                System.out.println(order.getNumberOfOrder()+" | " + order.getNameOfPerson());
             }
         }
         ThreadSafeList.sleep(4);

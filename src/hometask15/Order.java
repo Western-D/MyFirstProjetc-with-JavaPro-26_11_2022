@@ -2,19 +2,19 @@ package hometask15;
 
 public class Order {
     private int numberOfOrder;
-    private String nameOfOrder;
+    private String nameOfPerson;
 
     public Order(int numberOfOrder) {
         this.numberOfOrder = numberOfOrder;
     }
 
-    public String getNameOfOrder() {
-        return nameOfOrder;
+    public String getNameOfPerson() {
+        return nameOfPerson;
     }
 
     public Order(int numberOfOrder, String nameOfOrder) {
         this.numberOfOrder = numberOfOrder;
-        this.nameOfOrder = nameOfOrder;
+        this.nameOfPerson = nameOfOrder;
     }
 
     public int getNumberOfOrder() {
