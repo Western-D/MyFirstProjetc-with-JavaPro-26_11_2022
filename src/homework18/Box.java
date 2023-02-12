@@ -19,4 +19,7 @@ public class Box<T extends Fruits>{
     public boolean compareTo(Box box){
         return this.getWeight() == box.getWeight();
     }
+    public void merge(Box<T> box){
+        this.box.addAll(box.box);
+    }
 }
